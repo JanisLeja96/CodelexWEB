@@ -14,9 +14,7 @@ $max = $_POST['Max'];
     <input type="submit">
 </form>
 
-<form action="index.php" method="get">
     Random number: <?php echo random_int($min, $max);?>
-</form>
 
 </body>
 </html>
