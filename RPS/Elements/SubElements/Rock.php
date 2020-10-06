@@ -1,8 +1,6 @@
 <?php
 
-
-
 class Rock extends Element
 {
-    public array $canBeat = ['Scissors', 'Lizard'];
+    private array $canBeat = ['Scissors', 'Lizard'];
 }

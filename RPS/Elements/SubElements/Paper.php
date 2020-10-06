@@ -1,7 +1,6 @@
 <?php
 
-
 class Paper extends Element
 {
-    public array $canBeat = ['Rock', 'Spock'];
+    private array $canBeat = ['Rock', 'Spock'];
 }

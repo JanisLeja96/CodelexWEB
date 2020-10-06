@@ -1,9 +1,8 @@
 <?php
 
-
 abstract class Element
 {
-    public array $canBeat = [];
+    private array $canBeat = [];
 
     public function beats(Element $element): int
     {
@@ -13,5 +12,10 @@ abstract class Element
             return -1;
         }
         return 0;
+    }
+
+    public function getCanBeat(): array
+    {
+        return $this->canBeat;
     }
 }

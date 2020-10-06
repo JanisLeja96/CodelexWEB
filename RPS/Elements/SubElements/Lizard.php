@@ -2,5 +2,5 @@
 
 class Lizard extends Element
 {
-    public array $canBeat = ['Spock', 'Paper'];
+    private array $canBeat = ['Spock', 'Paper'];
 }
