@@ -1,15 +1,10 @@
 <?php
 
-require_once 'Requester/Requester.php';
 require_once 'Person/Person.php';
 require_once 'Person/PersonStorage.php';
 
-$req = new Requester();
-
-$stor = new PersonStorage();
-var_dump($stor->persons);
+$personStorage = new PersonStorage();
 ?>
-
 
 <html>
 <body>
@@ -20,7 +15,13 @@ var_dump($stor->persons);
 </form>
 
 
-
+<?php if (isset($_GET['name'])) :?>
+<h1>Requested person:</h1>
+<?php $person = $personStorage->getPerson($_GET['name']);?>
+Name: <?= $person->getName();?><br>
+Age: <?= $person->getAge();?><br>
+Count: <?= $person->getCount();?>
+<?php endif;?>
 
 </body>
 </html>
