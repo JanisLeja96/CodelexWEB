@@ -29,4 +29,19 @@ class Task
     {
         return $this->id;
     }
+
+    public static function setCount(int $count): void
+    {
+        Task::$count = $count;
+    }
+
+    public static function incrementCount(): void
+    {
+        Task::$count++;
+    }
+
+    public static function decrementCount(): void
+    {
+        Task::$count--;
+    }
 }

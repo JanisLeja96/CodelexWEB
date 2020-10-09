@@ -3,7 +3,7 @@
 
 class TaskList
 {
-    public array $tasks;
+    private array $tasks;
     private $taskFile;
 
 
@@ -23,12 +23,14 @@ class TaskList
             }
         }
         $this->tasks = $tasks;
+        Task::setCount(count($this->tasks));
     }
 
     public function addTask(Task $task): void
     {
         $this->tasks[] = $task;
         $this->saveToCSV();
+        Task::incrementCount();
     }
 
     private function saveToCSV(): void
@@ -51,6 +53,7 @@ class TaskList
     {
         unset($this->tasks[$id - 1]);
         $this->saveToCSV();
+        Task::decrementCount();
     }
 
 
