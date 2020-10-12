@@ -1,0 +1,20 @@
+{
+  "pictures": [
+    {
+      "url": "https:\/\/image.shutterstock.com\/image-photo\/before-after-example-photo-editing-600w-1097618201.jpg",
+      "score": 15
+    },
+    {
+      "url": "https:\/\/image.shutterstock.com\/image-photo\/before-after-example-photo-editing-260nw-732293995.jpg",
+      "score": 12
+    },
+    {
+      "url": "https:\/\/image.shutterstock.com\/image-photo\/frame-shop-sample-picture-display-260nw-1458623156.jpg",
+      "score": 1
+    },
+    {
+      "url": "https:\/\/image.shutterstock.com\/image-photo\/image-example-different-steps-properly-600w-1493573519.jpg",
+      "score": 2
+    }
+  ]
+}
