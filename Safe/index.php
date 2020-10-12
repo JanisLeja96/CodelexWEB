@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Safe.php';
+require_once 'Safe/Safe.php';
 session_start();
 $buttons = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 $safe = new Safe(1234);
