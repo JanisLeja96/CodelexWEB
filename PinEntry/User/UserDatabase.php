@@ -16,7 +16,7 @@ class UserDatabase
         while (!feof($this->databaseFile)) {
             $data = (array) fgetcsv($this->databaseFile);
             if (count($data) > 1) {
-                $this->users[] = new User($data[0], $data[1]);
+                $this->users[] = new User($data[0], $data[1], $data[2]);
             }
         }
     }
@@ -29,5 +29,14 @@ class UserDatabase
             }
         }
         return null;
+    }
+
+    public function findByUsername(string $username): User
+    {
+        foreach ($this->users as $user) {
+            if ($user->getUsername() == $username) {
+                return $user;
+            }
+        }
     }
 }
