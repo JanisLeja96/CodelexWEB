@@ -1,7 +1,5 @@
 {
   "require": {
-    "nesbot/carbon": "2.41.3",
-    "fzaninotto/faker": "^1.9",
     "ramsey/uuid": "^4.1"
   },
   "autoload": {
